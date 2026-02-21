@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Modhubon Resort and Restaurant - Experience authentic Indian hospitality in West Bengal. Comfortable rooms, delicious cuisine, and peaceful surroundings for your perfect family getaway.">
+    <meta name="keywords" content="Modhubon Resort and Restaurant, West Bengal Resort, Indian Resort, Family Resort, Restaurant, Accommodation, Holiday">
+    <meta name="author" content="New Modhubon Resort and Restaurant">
+    <title>New Modhubon Resort and Restaurant - Experience Indian Hospitality</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="style.css">
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Updated color scheme based on resort branding
+                        primary: '#8B4513',      // Saddle Brown (Earth tone)
+                        secondary: '#D2691E',    // Chocolate (Warm brown)
+                        accent: '#DAA520',       // Goldenrod (Gold accent)
+                        dark: '#654321',         // Dark Brown
+                        light: '#F5DEB3',        // Wheat (Beige/Cream)
+                        forest: '#228B22',       // Forest Green (Natural accent)
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Montserrat', 'sans-serif'],
+                        'elegant': ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 bg-gradient-to-br from-primary via-dark to-primary z-[100] flex items-center justify-center">
+        <div class="text-center">
+            <div class="relative">
+                <div class="w-24 h-24 border-4 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <i class="fas fa-spa text-accent text-3xl animate-pulse"></i>
+                </div>
+            </div>
+            <h2 class="font-display text-3xl text-accent mb-2">New Modhubon Resort and Restaurant</h2>
+            <p class="text-white font-body">Loading your perfect escape...</p>
+        </div>
+    </div>
+      <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 overflow-hidden bg-dark bg-opacity-95 backdrop-blur-sm">
+        <div class="w-full px-4 sm:px-6 lg:px-8">            <div class="flex items-center justify-between h-20 sm:h-24 max-w-7xl mx-auto"><!-- Logo -->                <div class="flex items-center space-x-2 sm:space-x-3">
+                    <img src="img/NMB.jpeg" alt="New Modhubon Resort and Restaurant" class="h-16 sm:h-20 w-auto">
+                    <div class="text-white">
+                        <h1 class="font-display text-sm sm:text-base md:text-lg font-bold tracking-wide">New Modhubon Resort</h1>
+                        <p class="text-xs font-light text-accent hidden sm:block">Experience Indian Hospitality</p>
+                    </div>
+                </div>
+                  <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-white hover:text-accent transition font-medium">Home</a>
+                    <a href="index.html#about" class="text-white hover:text-accent transition font-medium">About</a>
+                    <a href="index.html#explore" class="text-white hover:text-accent transition font-medium">Villas</a>
+                    <a href="index.html#gallery" class="text-white hover:text-accent transition font-medium">Gallery</a>
+                    <a href="offers.html" class="text-white hover:text-accent transition font-medium">Offers</a>
+                    <a href="booking.html" class="text-white hover:text-accent transition font-medium">Book</a>
+                    <a href="contact.html" data-open-contact class="text-white hover:text-accent transition font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark bg-opacity-95 backdrop-blur-sm w-full">
+            <div class="px-4 pt-2 pb-4 space-y-3 max-w-7xl mx-auto">
+                <a href="index.html#home" class="block text-white hover:text-accent transition font-medium py-2">Home</a>
+                <a href="index.html#about" class="block text-white hover:text-accent transition font-medium py-2">About</a>
+                <a href="index.html#explore" class="block text-white hover:text-accent transition font-medium py-2">Villas</a>
+                <a href="index.html#gallery" class="block text-white hover:text-accent transition font-medium py-2">Gallery</a>
+                <a href="offers.html" class="block text-white hover:text-accent transition font-medium py-2">Offers</a>
+                <a href="booking.html" class="block text-white hover:text-accent transition font-medium py-2">Book</a>
+                <a href="contact.html" data-open-contact class="block text-white hover:text-accent transition font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="relative h-screen flex items-center justify-center overflow-hidden w-full">    <!-- Background Slider -->
+    <div class="absolute inset-0 z-0 w-full">        <div class="hero-slider relative w-full h-full">
+            <div class="hero-slide active absolute inset-0 transition-opacity duration-1000">
+                <img src="img/NMB.jpeg" alt="Luxury Resort" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                <img src="assets/4.jpg" alt="Resort Pool" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                <img src="assets/5.jpg" alt="Resort Villa" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+        </div>
+    </div><!-- Hero Content -->
+    <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">        <div data-aos="fade-down">
+            <h2 class="font-elegant text-accent text-sm sm:text-base md:text-lg mb-3 sm:mb-4 tracking-widest">স্বাগতম - WELCOME TO</h2>
+        </div>        <div data-aos="fade-up" data-aos-delay="200">
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-shadow leading-tight">
+                New Modhubon Resort and Restaurant
+            </h1>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+            <p class="font-body text-sm sm:text-base md:text-lg mb-6 sm:mb-
+            
+            8 text-gray-100 max-w-3xl mx-auto leading-relaxed px-2">
+                Experience the warmth of Indian hospitality amidst nature's tranquility. Where tradition meets modern luxury.
+            </p>
+        </div>        <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
+            <a href="#explore" class="w-full sm:w-auto bg-accent text-dark px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-yellow-500 transition transform hover:scale-105 shadow-xl">
+                Explore Our Rooms
+            </a>
+            <a href="booking.html" class="w-full sm:w-auto glass-effect text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-dark transition transform hover:scale-105">
+                Book Your Stay
+            </a>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+        <a href="#features" class="text-white">
+            <i class="fas fa-chevron-down text-3xl"></i>
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">            <!-- Image Grid -->
+            <div class="relative" data-aos="fade-right">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="assets/1.jpg" alt="Resort" class="rounded-lg shadow-lg w-full h-64 object-cover hover-scale">
+                        <img src="assets/2.jpg" alt="Resort Interior" class="rounded-lg shadow-lg w-full h-80 object-cover hover-scale">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="assets/5.jpg" alt="Resort View" class="rounded-lg shadow-lg w-full h-80 object-cover hover-scale">
+                        <img src="assets/4.jpg" alt="Resort Amenities" class="rounded-lg shadow-lg w-full h-64 object-cover hover-scale">
+                    </div>
+                </div>
+                <!-- Decorative Element -->
+                <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-accent opacity-20 rounded-full -z-10"></div>
+            </div><!-- Content -->
+            <div data-aos="fade-left">
+                <h2 class="font-elegant text-accent text-lg sm:text-xl mb-3 tracking-widest">ABOUT US</h2>
+                <h3 class="font-display text-3xl sm:text-4xl md:text-5xl text-dark font-bold mb-4 sm:mb-6">Your Home Away From Home</h3>
+                <div class="w-24 h-1 bg-accent mb-4 sm:mb-6"></div>
+                
+                <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+                    Nestled in the serene landscape, New Modhubon Resort and Restaurant offers an authentic Indian hospitality experience. Our resort combines traditional warmth with modern amenities, creating a perfect retreat for families, couples, and business travelers.
+                </p>
+                  <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
+                    With comfortable accommodations, delicious regional cuisine, and peaceful surroundings, we ensure every moment of your stay is filled with joy and relaxation. Whether you're here for a family vacation, celebration, or peaceful getaway, New Modhubon Resort promises an unforgettable experience with true Indian hospitality.
+                </p>
+                
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl text-accent font-bold mb-1 sm:mb-2">20+</div>
+                        <div class="text-gray-600 font-medium text-xs sm:text-sm md:text-base">Comfortable Rooms</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl text-accent font-bold mb-1 sm:mb-2">5K+</div>
+                        <div class="text-gray-600 font-medium text-xs sm:text-sm md:text-base">Happy Guests</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl text-accent font-bold mb-1 sm:mb-2">10+</div>
+                        <div class="text-gray-600 font-medium text-xs sm:text-sm md:text-base">Years Serving</div>
+                    </div>
+                </div>
+                
+                <a href="about.html" class="inline-block bg-primary text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:bg-dark transition transform hover:scale-105">
+                    Learn More About Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Villas Section -->
+<section id="explore" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-elegant text-accent text-xl mb-3 tracking-widest">ACCOMMODATIONS</h2>
+            <h3 class="font-display text-4xl md:text-5xl text-dark font-bold mb-4">Our Comfortable Rooms</h3>
+            <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                Choose from our range of well-appointed rooms, each offering comfort, cleanliness, and all modern amenities.
+            </p>
+        </div>
+        
+        <!-- Villas Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">            <!-- Villa 1 -->
+            <div class="group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative overflow-hidden h-64">
+                    <img src="assets/10.jpg" alt="Standard Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute top-4 right-4 bg-accent text-dark px-4 py-2 rounded-full font-semibold">
+                        ₹2,999/Night
+                    </div>
+                </div><div class="p-6 bg-white">
+                    <h4 class="font-display text-xl sm:text-2xl text-dark mb-2">Standard Room</h4>
+                    <div class="flex flex-wrap items-center text-gray-600 mb-4 gap-2 sm:gap-4 text-sm sm:text-base">
+                        <span class="flex items-center"><i class="fas fa-bed text-accent mr-1 sm:mr-2"></i> 1-2 Beds</span>
+                        <span class="flex items-center"><i class="fas fa-bath text-accent mr-1 sm:mr-2"></i> Attached Bath</span>
+                        <span class="flex items-center"><i class="fas fa-users text-accent mr-1 sm:mr-2"></i> 2-3 Guests</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
+                        Clean and comfortable room with AC, TV, and all basic amenities for a pleasant stay.
+                    </p>
+                    <a href="our-villas.html" class="inline-flex items-center text-primary font-semibold hover:text-accent transition text-sm sm:text-base">
+                        View Details <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+              <!-- Villa 2 -->
+            <div class="group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative overflow-hidden h-64">
+                    <img src="assets/2.jpg" alt="Deluxe Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute top-4 right-4 bg-accent text-dark px-4 py-2 rounded-full font-semibold">
+                        ₹4,499/Night
+                    </div>
+                </div><div class="p-6 bg-white">
+                    <h4 class="font-display text-xl sm:text-2xl text-dark mb-2">Deluxe Room</h4>
+                    <div class="flex flex-wrap items-center text-gray-600 mb-4 gap-2 sm:gap-4 text-sm sm:text-base">
+                        <span class="flex items-center"><i class="fas fa-bed text-accent mr-1 sm:mr-2"></i> 2 Beds</span>
+                        <span class="flex items-center"><i class="fas fa-bath text-accent mr-1 sm:mr-2"></i> Premium Bath</span>
+                        <span class="flex items-center"><i class="fas fa-users text-accent mr-1 sm:mr-2"></i> 3-4 Guests</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
+                        Spacious room with modern amenities, balcony, and beautiful garden views.
+                    </p>
+                    <a href="our-villas.html" class="inline-flex items-center text-primary font-semibold hover:text-accent transition text-sm sm:text-base">
+                        View Details <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Villa 3 -->
+            <div class="group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative overflow-hidden h-64">
+                    <img src="assets/8.jpg" alt="Family Suite" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute top-4 right-4 bg-accent text-dark px-4 py-2 rounded-full font-semibold">
+                        ₹6,999/Night
+                    </div>
+                    <div class="absolute top-4 left-4 bg-dark text-accent px-4 py-2 rounded-full font-semibold text-sm">
+                        BEST FOR FAMILIES
+                    </div>
+                </div>                <div class="p-6 bg-white">
+                    <h4 class="font-display text-xl sm:text-2xl text-dark mb-2">Family Suite</h4>
+                    <div class="flex flex-wrap items-center text-gray-600 mb-4 gap-2 sm:gap-4 text-sm sm:text-base">
+                        <span class="flex items-center"><i class="fas fa-bed text-accent mr-1 sm:mr-2"></i> 3-4 Beds</span>
+                        <span class="flex items-center"><i class="fas fa-bath text-accent mr-1 sm:mr-2"></i> 2 Baths</span>
+                        <span class="flex items-center"><i class="fas fa-users text-accent mr-1 sm:mr-2"></i> 5-6 Guests</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
+                        Extra spacious suite perfect for families with separate living area and premium amenities.
+                    </p>
+                    <a href="our-villas.html" class="inline-flex items-center text-primary font-semibold hover:text-accent transition text-sm sm:text-base">
+                        View Details <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+          <!-- View All Button -->
+        <div class="text-center mt-12" data-aos="fade-up">
+            <a href="our-villas.html" class="inline-block bg-primary text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-dark transition transform hover:scale-105 shadow-lg">
+                View All Rooms
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Packages moved to offers.html -->
+
+<!-- Features Section -->
+<section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-elegant text-accent text-xl mb-3 tracking-widest">DISCOVER</h2>
+            <h3 class="font-display text-4xl md:text-5xl text-dark font-bold mb-4">Why Choose Us</h3>
+            <div class="w-24 h-1 bg-accent mx-auto"></div>
+        </div>
+        
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">            <!-- Feature 1 -->
+            <div class="text-center p-6 rounded-lg hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                    <i class="fas fa-utensils text-accent text-3xl"></i>
+                </div>
+                <h4 class="font-display text-2xl text-dark mb-3">Indian Cuisine</h4>
+                <p class="text-gray-600 leading-relaxed">Savor authentic Indian delicacies and regional specialties prepared with traditional recipes and local ingredients.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="text-center p-6 rounded-lg hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float" style="animation-delay: 1s;">
+                    <i class="fas fa-leaf text-accent text-3xl"></i>
+                </div>
+                <h4 class="font-display text-2xl text-dark mb-3">Nature Retreat</h4>
+                <p class="text-gray-600 leading-relaxed">Immerse yourself in lush greenery and peaceful surroundings, perfect for relaxation and rejuvenation.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="text-center p-6 rounded-lg hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float" style="animation-delay: 2s;">
+                    <i class="fas fa-swimmer text-accent text-3xl"></i>
+                </div>
+                <h4 class="font-display text-2xl text-dark mb-3">Boating</h4>
+                <p class="text-gray-600 leading-relaxed">Enjoy boating on our serene lake, offering a peaceful and scenic experience for all ages.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="text-center p-6 rounded-lg hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-float" style="animation-delay: 3s;">
+                    <i class="fas fa-users text-accent text-3xl"></i>
+                </div>
+                <h4 class="font-display text-2xl text-dark mb-3">Family Friendly</h4>
+                <p class="text-gray-600 leading-relaxed">Perfect destination for families with spacious rooms, kids' activities, and warm Indian hospitality.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta" class="relative py-32 bg-fixed bg-cover bg-center" style="background-image: url('assets/4.jpg');">
+    <div class="absolute inset-0 bg-dark opacity-80"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div data-aos="zoom-in">            <i class="fas fa-quote-left text-accent text-4xl mb-6"></i>            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Your Perfect Indian Getaway Awaits
+            </h2>            <p class="text-xl md:text-2xl text-gray-200 mb-8 font-elegant leading-relaxed">
+                "অতিথি দেবো ভব - Guest is God. Experience the true essence of Bengali hospitality at New Modhubon Resort."
+            </p>            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
+                <a href="booking.html" class="bg-accent text-dark px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition transform hover:scale-110 shadow-2xl">
+                    <i class="fas fa-calendar-check mr-2"></i> Book Your Escape Now
+                </a>
+                <a href="contact.html" data-open-contact class="glass-effect text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-dark transition transform hover:scale-110">
+                    <i class="fas fa-phone mr-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+          <!-- Stats Counter -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+                <div class="font-display text-5xl font-bold text-accent mb-2 counter" data-target="20">0</div>
+                <div class="text-gray-300 font-semibold">Comfortable Rooms</div>
+            </div>
+            <div class="text-center">
+                <div class="font-display text-5xl font-bold text-accent mb-2"><span class="counter" data-target="5">0</span>K+</div>
+                <div class="text-gray-300 font-semibold">Happy Guests</div>
+            </div>
+            <div class="text-center">
+                <div class="font-display text-5xl font-bold text-accent mb-2 counter" data-target="10">0</div>
+                <div class="text-gray-300 font-semibold">Years Serving</div>
+            </div>
+            <div class="text-center">
+                <div class="font-display text-5xl font-bold text-accent mb-2 counter" data-target="95">0</div>
+                <div class="text-gray-300 font-semibold">Satisfaction Rate</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Preview Section -->
+<section id="gallery" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-elegant text-accent text-xl mb-3 tracking-widest">GALLERY</h2>
+            <h3 class="font-display text-4xl md:text-5xl text-dark font-bold mb-4">Captured Moments</h3>
+            <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                Explore the beauty and elegance of New Modhubon Resort through our curated collection of images.
+            </p>
+        </div>
+          <!-- Gallery Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="gallery-grid">
+            <div class="col-span-2 row-span-2 overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
+                <img src="assets/1.jpg" alt="Resort" class="gallery-image w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" data-index="0">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/9.jpg" alt="Pool" class="gallery-image w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer" data-index="1">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/11.jpeg" alt="Interior" class="gallery-image w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer" data-index="2">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/12.jpeg" alt="Dining" class="gallery-image w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer" data-index="3">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="250">
+                <img src="assets/13.jpeg" alt="Spa" class="gallery-image w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer" data-index="4">
+            </div>
+        </div>
+          <!-- View All Button -->
+        <div class="text-center mt-12" data-aos="fade-up">
+            <a href="gallery.html" class="inline-block bg-primary text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-dark transition transform hover:scale-105 shadow-lg">
+                View Full Gallery
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-95 z-[200] hidden items-center justify-center p-4">
+    <button id="lightbox-close" class="absolute top-4 right-4 md:top-8 md:right-8 w-12 h-12 bg-white rounded-full hover:bg-accent transition z-10">
+        <i class="fas fa-times text-dark text-xl"></i>
+    </button>
+    
+    <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white bg-opacity-80 rounded-full hover:bg-accent transition z-10">
+        <i class="fas fa-chevron-left text-dark text-xl"></i>
+    </button>
+    
+    <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white bg-opacity-80 rounded-full hover:bg-accent transition z-10">
+        <i class="fas fa-chevron-right text-dark text-xl"></i>
+    </button>
+    
+    <div class="max-w-7xl max-h-full w-full h-full flex flex-col items-center justify-center">
+        <img id="lightbox-image" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl">
+        <div class="mt-6 text-center">
+            <p id="lightbox-caption" class="text-white text-xl font-semibold mb-2"></p>
+            <p id="lightbox-counter" class="text-gray-300 text-sm"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Modal -->
+<div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-60 z-[300] hidden items-center justify-center p-4">
+    <div class="w-full max-w-lg bg-white rounded-lg shadow-2xl p-6 relative">
+        <button id="contact-modal-close" class="absolute top-4 right-4 w-10 h-10 bg-gray-100 rounded-full hover:bg-accent transition">
+            <i class="fas fa-times text-dark"></i>
+        </button>
+        <h3 class="text-2xl font-display text-dark mb-4">Contact Us</h3>
+        <form id="contact-modal-form" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" name="name" id="contact-name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Your name">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Phone</label>
+                <input type="tel" name="phone" id="contact-phone" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Phone number">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Enquiry</label>
+                <textarea name="enquiry" id="contact-enquiry" required rows="4" class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Write your enquiry here..."></textarea>
+            </div>
+            <div class="flex items-center justify-end space-x-3">
+                <button type="button" id="contact-modal-cancel" class="px-4 py-2 rounded-full bg-gray-200 text-dark">Cancel</button>
+                <button type="submit" id="contact-modal-submit" class="px-4 py-2 rounded-full bg-accent text-dark font-semibold">Submit</button>
+            </div>
+        </form>
+        <div id="contact-thankyou" class="hidden text-center mt-4">
+            <h4 class="text-xl font-semibold text-accent">Submit your enquiry</h4>
+            <p class="text-gray-700 mt-2">Thank you! We will contact you soon.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-elegant text-accent text-xl mb-3 tracking-widest">TESTIMONIALS</h2>
+            <h3 class="font-display text-4xl md:text-5xl text-dark font-bold mb-4">What Our Guests Say</h3>
+            <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                Read the experiences of our valued guests who have made New Modhubon Resort their home away from home.
+            </p>
+        </div>
+          <!-- Testimonials Slider -->
+        <div class="relative max-w-4xl mx-auto">
+            <div class="testimonials-container overflow-hidden">
+                <div class="testimonials-slider flex transition-transform duration-500">                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/profile.jpg" alt="Guest" class="w-20 h-20 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h5 class="font-display text-2xl text-dark">Priya Sharma</h5>
+                                    <div class="flex text-accent text-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic leading-relaxed mb-4 text-lg">
+                                "Absolutely wonderful experience! The rooms were clean, staff was very friendly, and the food was delicious. Perfect place for a family vacation. Highly recommended!"
+                            </p>
+                            <p class="text-accent font-semibold">Family Stay - December 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/profile.jpg" alt="Guest" class="w-20 h-20 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h5 class="font-display text-2xl text-dark">Rajesh Kumar</h5>
+                                    <div class="flex text-accent text-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic leading-relaxed mb-4 text-lg">
+                                "Great location for a peaceful weekend getaway. The swimming pool is excellent and the restaurant serves authentic Bengali and North Indian food. Staff is very helpful!"
+                            </p>
+                            <p class="text-accent font-semibold">Weekend Trip - November 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/profile.jpg" alt="Guest" class="w-20 h-20 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h5 class="font-display text-2xl text-dark">Anita Das</h5>
+                                    <div class="flex text-accent text-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic leading-relaxed mb-4 text-lg">
+                                "A perfect place for celebrations! We organized our anniversary party here. The arrangements were excellent and the team was very cooperative. Will definitely visit again!"
+                            </p>
+                            <p class="text-accent font-semibold">Anniversary Celebration - January 2026</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/profile.jpg" alt="Guest" class="w-20 h-20 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h5 class="font-display text-2xl text-dark">Amit Banerjee</h5>
+                                    <div class="flex text-accent text-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic leading-relaxed mb-4 text-lg">
+                                "Excellent venue for corporate meetings! We had our team outing here. The conference room was well-equipped and the food service was prompt. Great value for money!"
+                            </p>
+                            <p class="text-accent font-semibold">Corporate Event - October 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 bg-accent rounded-full shadow-lg hover:bg-yellow-500 transition z-10">
+                <i class="fas fa-chevron-left text-dark"></i>
+            </button>
+            <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 bg-accent rounded-full shadow-lg hover:bg-yellow-500 transition z-10">
+                <i class="fas fa-chevron-right text-dark"></i>
+            </button>
+            
+            <!-- Dots Indicator -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-accent transition" data-index="0"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition" data-index="1"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition" data-index="2"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition" data-index="3"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">                <!-- About -->                <div class="space-y-4">
+                    <img src="img/NMB.jpeg" alt="New Modhubon Resort and Restaurant" class="h-14 sm:h-16 w-auto mb-4">
+                    <h3 class="font-display text-xl sm:text-2xl text-accent">New Modhubon Resort</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Experience authentic Indian hospitality and comfort in the heart of nature. Your perfect family getaway awaits.
+                    </p>
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+                            <i class="fab fa-facebook-f text-dark"></i>
+                        </a>
+                        <a href="https://www.instagram.com/modhubon_resort/" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+                            <i class="fab fa-instagram text-dark"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+                            <i class="fab fa-whatsapp text-dark"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+                            <i class="fab fa-youtube text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-display text-xl text-accent mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="text-gray-300 hover:text-accent transition">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-accent transition">About Us</a></li>
+                        <li><a href="index.html#explore" class="text-gray-300 hover:text-accent transition">Our Villas</a></li>
+                        <li><a href="index.html#gallery" class="text-gray-300 hover:text-accent transition">Gallery</a></li>
+                        <li><a href="contact.html" data-open-contact class="text-gray-300 hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+                  <!-- Services -->
+                <div>
+                    <h4 class="font-display text-xl text-accent mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center"><i class="fas fa-check text-accent mr-2"></i> Indian Restaurant</li>
+                        <li class="text-gray-300 flex items-center"><i class="fas fa-check text-accent mr-2"></i> Boating</li>
+                        <li class="text-gray-300 flex items-center"><i class="fas fa-check text-accent mr-2"></i> Event Spaces</li>
+                        <li class="text-gray-300 flex items-center"><i class="fas fa-check text-accent mr-2"></i> Parking Facility</li>
+                    </ul>
+                </div>
+                  <!-- Contact Info -->
+                <div>
+                    <h4 class="font-display text-lg sm:text-xl text-accent mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-sm sm:text-base">
+                        <li class="text-gray-300 flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="break-words">New Modhubon Resort and Restaurant, West Bengal, India</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center">
+                            <i class="fas fa-phone text-accent mr-2 sm:mr-3 flex-shrink-0"></i>
+                            <span>+91 93327 47285</span>
+                        </li>
+                        <li class="text-gray-300 flex items-start">
+                            <i class="fas fa-envelope text-accent mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="break-all">modhubonresort@gmail.com</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center">
+                            <i class="fas fa-clock text-accent mr-2 sm:mr-3 flex-shrink-0"></i>
+                            <span>24/7 Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+              <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
+                    <p class="text-gray-400 text-xs sm:text-sm">
+                        &copy; 2026 New Modhubon Resort and Restaurant. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
+                        <a href="#" class="text-gray-400 hover:text-accent transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-accent text-dark w-12 h-12 rounded-full shadow-lg hidden hover:bg-yellow-500 transition transform hover:scale-110 z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/custom.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
