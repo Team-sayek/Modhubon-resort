@@ -1,8 +1,3 @@
-/**
- * Madhubon Resort - Custom JavaScript
- * Enhanced interactivity and animations
- */
-
 // Page Loader
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
